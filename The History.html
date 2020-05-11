@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The History</title>
+    <script type = "text/javascript">
+          function displayNextImage() {
+              x = (x === images.length - 1) ? 0 : x + 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function displayPreviousImage() {
+              x = (x <= 0) ? images.length - 1 : x - 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function startTimer() {
+              setInterval(displayNextImage, 3000);
+          }
+
+          var images = [], x = -1;
+          images[0] = "Timeline.jpg";
+          images[1] = "map.jpg";
+          images[2] = "Kings_reign.jpg";
+          images[3] = "history_timline_map.jpg";
+      </script>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+            background: url(top.jpg);
+            color: white;
+        }
+
+        a {
+            color: white;
+        }
+
+        .header {
+            height: 65px;
+            margin-top: 25px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .banner {
+            background: url(crusades.jpg);
+            background-size: cover;
+            width: auto;
+            height: 200px;
+            text-align: center;
+            font-size: 52px;
+            padding-top: 75px;
+
+            color: white;
+        }
+
+        .content {
+            min-height: 500px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            padding-left: 150px;
+            padding-right: 150px;
+            font-size: 18px;
+            background-image: url("parchment.gif");
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+<div class="header">
+    <a href="Home.html">Home</a> / <a href="The History.html">The History</a> / <a href="Extars.html">Richad And Salidin</a> / <a href="index.html">Quiz</a>
+</div>
+<div class="banner">
+    THE EVENTS IN THE CRUSADES!
+</div>
+
+<div class="content">
+   <H1><CENTER>There was not just one crusade but loads as there was a constant strugle over the Holy Lands.<Br/> This is because of the many relions that fed of it.<Br/> So there were battles to keep it .<Br/>But these battles of religion soon turned into battles of greed as you will see in the list of the most important events in the crusades for muslims and christians:</CENTER><H1>
+  <CENTER>
+  <TABLE BORDER=2>
+  <CENTER>
+  <TR></B></TH><TH><B>Date</B></TH><TH><B>Crusade</B></TH><TH><B>Facts</B></TH>
+  <TR><TD>1095 - 1099</I></TD><TD>The First Crusade</TD><TD>The Crusaders take over the Holy Land.</TD>
+  <TR><TD>1147 - 1149</I></TD><TD>The Second Crusade</TD><TD>The Turks conquer Edessa in 1146.</TD>
+  <TR><TD>1187 - 1192</I></TD><TD>The Third Crusade</TD><TD>Salidin recaptures Jerusalem in 1187.<br/>And Richard erns the right for christians to have pilgrims.</TD>
+  <TR><TD>1202 - 1204</I></TD><TD>The Fourth Crusade</TD><TD>Pope Innocent III set out to recapture The Holy Land. But he changes his plans and took Constantinople instead.</TD>
+  <TR><TD>   1212       </I></TD><TD>The Children's Crusade</TD><TD>A French and German child led tens of thousands of children to The Holy Land.</TD>
+  <TR><TD>1217 and 1272</I></TD><TD>The Fifth to Ninth crusades</TD><TD>Failed atemps of recapturing The Holy Land</TD>
+  </CENTER>
+  </TABLE>
+  </CENTER>
+    <CENTER>
+	<body onload = "startTimer()">
+       <img id="img" src="Crusades(2).jpg"/>
+       <button type="button" onclick="displayPreviousImage()">Previous</button>
+       <button type="button" onclick="displayNextImage()">Next</button>
+    </CENTER>
+</body>
+</html>
